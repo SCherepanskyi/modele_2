@@ -12,3 +12,12 @@ venv/
 
 # Игнорировать файлы с секретными данными
 .env
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
