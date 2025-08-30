@@ -74,7 +74,7 @@ class GameSettings:
         return cls._RESULTS_FILE
 
     @classmethod
-    def get_game_level(cls, level):
+    def get_game_levels(cls, level):
         """Get the game level"""
         return cls._GAME_LEVEL[level]
 

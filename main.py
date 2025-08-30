@@ -1,4 +1,4 @@
-from game.game import Game
+from game.game import GameLogic
 from game.score import ScoreManager
 import sys
 
@@ -14,14 +14,14 @@ class Main:
     @staticmethod
     def game_run():
         """Run the game."""
-        game = Game()
+        game = GameLogic()
         while True:
             Main.show_menu()
             choice = input("Enter your choice (1, 2, or 3): ").strip()
             if choice == "1":
                 game.start()
             elif choice == "2":
-                ScoreManager.show_results()
+                ScoreManager.display_results()
             elif choice == "3":
                 print("Thanks for playing!")
                 sys.exit()
